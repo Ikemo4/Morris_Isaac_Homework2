@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Grade Calculator";
+    ViewBag.Heading = "Grade Calculator";
+}
+
+@model GradeModel
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>
+        Calculate your Grade Here: (Please input percentage received for each
+        category as a whole number i.e. input 97% as 97)
+    </h3>
+    <br />
+    <br />
+    <form method="post">
+        <label>Assignments: </label><br />
+        <input id="Asgmt" asp-for="Asgmt" />
+        <br /><br />
+        <label>Group Project: </label><br />
+        <input id="Groupproject" asp-for="Groupproject" />
+        <br /><br />
+        <label>Quizzes: </label><br />
+        <input id="Quiz" asp-for="Quiz" />
+        <br /><br />
+        <label>Exams: </label><br />
+        <input id="Exam" asp-for="Exam" />
+        <br /><br />
+        <label>INTEX: </label><br />
+        <input id="Intex" asp-for="Intex" />
+        <br /><br />
+        <input type="submit" value="Calculate" id="submitGrade" />
+        <div asp-validation-summary="All"></div>
+    </form>
+    <br />
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/grade.js"></script>
+</body>
+</html>

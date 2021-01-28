@@ -1,0 +1,9 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+label {
+    font-size: 18px;
+    color: lightslategray;
+    width: 150px;
+}
